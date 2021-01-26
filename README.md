@@ -16,4 +16,4 @@ If you just want the list of valid polynomials and don't want to run this yourse
 1 + x**3 + x**5 + x**7 + x**8
 1 + x + x**6 + x**7 + x**8
 1 + x**2 + x**4 + x**5 + x**6 + x**7 + x**8
-1 + x**3 + x**4 + x**5 + x**6 + x**7 + x**8```
+1 + x**3 + x**4 + x**5 + x**6 + x**7 + x**8
