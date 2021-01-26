@@ -50,7 +50,7 @@ function getSetBits(num) {
             setBits.push(bitNum);
         }
 
-        num >>= 1;
+        num >>>= 1;
         ++bitNum;
     }
 
