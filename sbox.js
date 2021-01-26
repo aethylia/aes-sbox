@@ -57,15 +57,17 @@ function getSetBits(num) {
     return setBits;
 }
 
+//generates a javascript style polynomial string from
+//an array of which bits of a binary number are set
 function setBitsToPolyString(setBits) {
     let s = "";
 
     setBits.forEach((v, i) => {
         if (v === 0) {
-            s += '1';
+            s += '1'; //x**0 === 1
         }
         else if (v === 1) {
-            s += "x";
+            s += "x"; //x**1 === x
         }
         else {
             s += `x**${v}`
@@ -86,7 +88,7 @@ for (let i = 0; i < 2**9; ++i) {
     const s = sbox(i);
     const e = entropy(s);
 
-    if (e > 5.0) {
+    if (e > threshold) {
         const bits = getSetBits(i);
         const polyString = setBitsToPolyString(bits);
 
